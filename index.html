@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Reservation</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: #f7f9fc;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      nav {
+        background: linear-gradient(90deg, #0077b6, #00b4d8);
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-weight: bold;
+        transition: opacity 0.2s;
+      }
+
+      nav a:hover {
+        opacity: 0.8;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 2rem;
+        color: #023e8a;
+      }
+
+      .rooms {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .room-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+
+      .room-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .room-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .room-card h2 {
+        margin: 1rem 0 0.5rem;
+        color: #0077b6;
+      }
+
+      .room-card p {
+        margin-bottom: 1rem;
+      }
+
+      .cta {
+        display: inline-block;
+        margin-top: 2rem;
+        background: #0077b6;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.75rem 2rem;
+        border-radius: 4px;
+        transition: background 0.2s;
+      }
+
+      .cta:hover {
+        background: #023e8a;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="booking.html">Book a Room</a>
+      <a href="https://script.google.com/macros/s/AKfycbwnUzcK8SqTHXRJBq52SPGkuQlSDfb-IKMw63n7EHL6bbOGyFBMeDJmRatKLzkcY5coqQ/exec?page=booked" target="_blank">Booked Dates</a>
+    </nav>
+
+    <div class="container">
+      <h1>Welcome to BlueWave Hotel</h1>
+
+      <div class="rooms">
+        <div class="room-card">
+          <img
+            src="https://ywcavan.org/sites/default/files/styles/scale_width_1440/public/assets/room/room_image/Single-bed-room-YWCA_Hotel_Vancouver.jpg?itok=ha3Io79Z"
+            alt="Single Room"
+          />
+          <h2>Single Room</h2>
+          <p>₱3,000 per day</p>
+        </div>
+
+        <div class="room-card">
+          <img
+            src="https://roomraccoon.com/wp-content/uploads/2024/06/DOUBLE-ROOM-FEATURED-BLOG-IMAGES-3.png"
+            alt="Double Room"
+          />
+          <h2>Double Room</h2>
+          <p>₱7,000 per day</p>
+        </div>
+
+        <div class="room-card">
+          <img
+            src="https://cdn.marriottnetwork.com/uploads/sites/24/2021/02/canyon-suites-scottsdale-luxury-collection-king-bedroom.jpg"
+            alt="Suite"
+          />
+          <h2>Suite</h2>
+          <p>₱12,000 per day</p>
+        </div>
+
+        <div class="room-card">
+          <img
+            src="https://img1.10bestmedia.com/Images/Photos/378649/Park-Hyatt-New-York-Manhattan-Sky-Suite-Master-Bedroom-low-res_54_990x660.jpg?auto=webp&width=3840&quality=75"
+            alt="Luxury Room"
+          />
+          <h2>Luxury Room</h2>
+          <p>₱20,000 per day</p>
+        </div>
+      </div>
+
+      <a class="cta" href="booking.html">Book Now</a>
+    </div>
+  </body>
 </html>
